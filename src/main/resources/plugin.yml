@@ -1,0 +1,29 @@
+name: RasenganPlugin
+version: 1.0.0
+main: org.rasengan.RasenganPlugin
+api-version: '1.21'
+
+softdepend:
+  - Citizens
+
+commands:
+  naruto:
+    description: 나루토 기술 선택서 지급
+    usage: /나루토
+    aliases:
+      - '나루토'
+
+  narutaselect:
+    description: 나루토 기술 및 수리검 지급
+    usage: /narutaselect
+
+  chakra:
+    description: 차크라 확인 및 개인별 최대치 설정
+    usage: /chakra
+    aliases:
+      - '차크라'
+
+permissions:
+  rasengan.admin:
+    description: 플레이어의 차크라 최대치 설정 권한
+    default: op
